@@ -21,12 +21,22 @@ h3 {
 }
 .box1 {
     background-color: red;
-    padding-top: 10px ;
+    height: 100px ;
+    width: 100px;
+    color:mintcream;
+    border: 2px solid black;
+    padding:16px;
+    box-sizing: border-box;
+    
 }
 .box2{
+    height: 100px ;
+    width: 100px;
     background-color: green;
 }
 .box3{
+    height: 100px ;
+    width: 100px;
     background-color: purple;
 }
 img{
