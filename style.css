@@ -1,0 +1,21 @@
+html{
+    font-size: 40px;
+}
+#study{
+    font-size: 3em;
+    color: violet;
+}
+.list{
+    color: blue;
+}
+:root{
+    --text-color: yellow;
+}
+h3 {
+    color: var(--text-color);
+}
+.box{
+    width: 50%;
+    height: 100px;
+    background-color: red;
+}
