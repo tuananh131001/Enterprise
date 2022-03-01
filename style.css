@@ -33,6 +33,8 @@ h3 {
     height: 100px ;
     width: 100px;
     background-color: green;
+    border: 10px dashed black;
+    background-clip: padding-box;
 }
 .box3{
     height: 100px ;
