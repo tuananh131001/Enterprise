@@ -19,3 +19,18 @@ h3 {
     height: 100px;
     background-color: red;
 }
+.box1 {
+    background-color: red;
+    padding-top: 10px ;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: purple;
+}
+img{
+    max-width: 10%;
+    max-height: 10%;
+    size: 1px;
+}
