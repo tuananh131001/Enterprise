@@ -1,52 +1,22 @@
-html{
-    font-size: 40px;
+
+#title{
+    margin-top:0px;
+    color: white;
+    background-color: blue;
+    text-align: center;
 }
-#study{
-    font-size: 3em;
-    color: violet;
+#content{
+    margin: 10px;
 }
-.list{
-    color: blue;
+body {
+    margin: 0;
 }
-:root{
-    --text-color: yellow;
-}
-h3 {
-    color: var(--text-color);
-}
-.box{
-    width: 50%;
-    height: 100px;
-    background-color: red;
-}
-.box1 {
-    background-color: red;
-    height: 100px ;
-    width: 100px;
-    color:mintcream;
-    border: 2px solid black;
-    padding:16px;
-    box-sizing: border-box;
-    
-}
-.box2{
-    height: 100px ;
-    width: 100px;
-    background-color: green;
-    border: 10px dashed black;
-    background-clip: padding-box;
-}
-.box3{
-    height: calc(50px + 50px) ;
-    width: 100px;
-    background: rgb(255, 255, 255);
-}
-img{
-    max-width: 10%;
-    max-height: 10%;
+img {
+    max-width: 50%;
+    max-height: 50%;
     size: 1px;
+    margin: 10px;
 }
-body{
-    background: url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/background-anime-thanh-pho.jpg)
-     no-repeat 100%;
+h1:hover{
+    color: red;
 }
