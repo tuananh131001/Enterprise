@@ -37,9 +37,9 @@ h3 {
     background-clip: padding-box;
 }
 .box3{
-    height: 100px ;
+    height: calc(50px + 50px) ;
     width: 100px;
-    background-color: purple;
+    background: rgb(255, 255, 255);
 }
 img{
     max-width: 10%;
@@ -47,8 +47,6 @@ img{
     size: 1px;
 }
 body{
-    background-image: 
-    url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/background-anime-thanh-pho.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/background-anime-thanh-pho.jpg)
+     no-repeat 100%;
 }
