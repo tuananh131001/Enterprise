@@ -14,25 +14,46 @@ html{
     height: 48px;
     background-color: #000;
 }
-#nav{
-
+#nav, .subnav{
+    list-style-type:none;
 }
 #nav li{
     display: inline-block;
+    position: relative;
 
 }
-#nav li:hover a{
-    color: #000;
-    background-color: #ccc;
-
+#nav>li{
+    display: inline-block ;
+}
+#nav>li>a{
+    text-transform: uppercase;
+    color: #fff;
 }
 #nav li a{
-    color: #fff;
+    
     text-decoration: none;
     line-height: 48px;
     padding:0 24px;
-    display: inline-block;
+    display: block;
+}
 
+#nav .subnav li:hover a,
+#nav > li:hover> a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+
+}
+#nav .subnav a{
+    color:#000;
+}
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
 }
 #slider{
 
