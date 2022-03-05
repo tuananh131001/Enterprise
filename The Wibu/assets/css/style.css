@@ -30,10 +30,12 @@ html{
     color: #fff;
 }
 #nav li a{
-    
     text-decoration: none;
-    line-height: 48px;
+    line-height: 46px;
     padding:0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
     display: block;
 }
 
@@ -44,12 +46,17 @@ html{
 }
 
 #nav .subnav{
+    display: none;
+    min-width: 160px;
     position: absolute;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
 #nav .subnav a{
     color:#000;
+    padding: 0 12px;
+    line-height: 38px;
 }
 #nav .subnav li:hover{
     color: #000;
