@@ -12,12 +12,12 @@ html{
 }
 #header{
     height: 48px;
-    background-color: #000;
+    background-color: darkblue;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1px;
+    z-index: 1;
 }
 #nav{
     display: inline-block;
@@ -89,6 +89,7 @@ html{
     background-color: #f44336;
 }
 #slider{
+    position: relative;
     margin-top: 46px;
     padding-top: 50%;
     background: url('/The Wibu/assets/img/slider/kny.jpg') center / cover no-repeat;
