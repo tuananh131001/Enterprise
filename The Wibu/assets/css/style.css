@@ -33,7 +33,7 @@ html{
     
 }
 #nav li{
-    display: inline-block;
+    display: block;
     position: relative;
 
 }
@@ -66,8 +66,6 @@ html{
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-
 }
 #nav .subnav a{
     color:#000;
