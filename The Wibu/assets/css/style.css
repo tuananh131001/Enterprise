@@ -148,6 +148,11 @@ html{
 #content .section-heading,
 #content .section-subheading{
     text-align: center;
+    
+}
+
+#content .section-heading{
+    text-transform: uppercase;
 }
 #content .member-items{
     padding: 47px;
