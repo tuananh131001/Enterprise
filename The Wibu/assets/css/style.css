@@ -230,7 +230,7 @@ html{
     margin-top: 15px;
     line-height: 1.6;
 }
-.place-buy-btn {
+.btns-full-width {
     color: #fff;
     background-color: #000;
     text-decoration: none;
@@ -238,7 +238,7 @@ html{
     display: inline-block;
     margin-top: 15px;
 }
-.place-buy-btn:hover{
+.btns-full-width:hover{
     color: #000;
     background-color: #ccc;
 }

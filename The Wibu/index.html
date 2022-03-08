@@ -81,7 +81,7 @@
                                 <h3 class="place-heading">Part 1</h3>
                                 <p class="place-time">Fri 17 Oct 2016</p>
                                 <p class="place-desc">Kenja no deshi o nanoru kenja là một loạt light novel được viết bởi Ryusen Hirotsugu và do Fuzichoco vẽ minh họa, ban đầu được sáng tác dưới dạng tiểu thuyết mạng đăng trên trang web xuất bản tiểu thuyết Shōsetsuka ni Narō từ tháng 4 năm 2012</p>
-                                <a href="#" class="place-buy-btn">Watching</a>
+                                <button class="btns-full-width js-buy-ticket">Watching</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -90,7 +90,7 @@
                                 <h3 class="place-heading">Part 2</h3>
                                 <p class="place-time">Fri 17 Oct 2016</p>
                                 <p class="place-desc">Kenja no deshi o nanoru kenja là một loạt light novel được viết bởi Ryusen Hirotsugu và do Fuzichoco vẽ minh họa, ban đầu được sáng tác dưới dạng tiểu thuyết mạng đăng trên trang web xuất bản tiểu thuyết Shōsetsuka ni Narō từ tháng 4 năm 2012</p>
-                                <a href="#" class="place-buy-btn">Watching</a>
+                                <button class="btns-full-width js-buy-ticket">Watching</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -99,7 +99,7 @@
                                 <h3 class="place-heading">Part 3</h3>
                                 <p class="place-time">Fri 17 Oct 2016</p>
                                 <p class="place-desc">Kenja no deshi o nanoru kenja là một loạt light novel được viết bởi Ryusen Hirotsugu và do Fuzichoco vẽ minh họa, ban đầu được sáng tác dưới dạng tiểu thuyết mạng đăng trên trang web xuất bản tiểu thuyết Shōsetsuka ni Narō từ tháng 4 năm 2012</p>
-                                <a href="#" class="place-buy-btn">Watching</a>
+                                <button class="btns-full-width js-buy-ticket">Watching</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -146,5 +146,14 @@
 
 
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        function showBuyTickets() {
+            alert("show")
+        }
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+    </script>
 </body>
 </html>
