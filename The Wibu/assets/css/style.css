@@ -267,7 +267,7 @@ html{
     width: 900px;
     max-width: calc(100%-32px);
     min-height: 200px;
-    animation: modalFadeIn ease 0.3s;
+    animation: modalFadeIn ease 0.5s;
 }
 header.modal-header{
     background-color: #009688;
@@ -333,9 +333,11 @@ header.modal-header{
 
 @keyframes modalFadeIn {
     from {
+        opacity: 0;
         transform: translateY(-100px);
     }
     to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
