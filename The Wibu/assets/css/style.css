@@ -131,7 +131,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/The Wibu/assets/img/slider/kny.jpg') center / cover no-repeat;
+    background: url('/Enterprise/The Wibu/assets/img/slider/kny.jpg') center / cover no-repeat;
 }
 #slider .text-content {
     position: absolute;
@@ -156,7 +156,7 @@ html{
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 0px;
+    padding: 64px 0px 12px;
 
     margin-left: auto;
     margin-right:auto ;
@@ -269,9 +269,6 @@ html{
     background-color: #ccc;
 }
 
-#footer{
-
-}
 .modal.open{
     display: flex;
 }
@@ -394,4 +391,32 @@ header.modal-header{
     padding: 10px 16px;
     float: right;
     outline: none;
+}
+.map-section img {
+    width:100%
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center  ;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+    
+}
+.copyright{
+    margin-top:15px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.copyright a{
+    color: rgba(0, 0, 0, 0.6);
 }
