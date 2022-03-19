@@ -1,4 +1,3 @@
-@import url('https://fonts.google.com/specimen/Outfit');
 *{
     padding: 0;
     margin: 0;
@@ -14,12 +13,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    font-family: 'Outfit';
-}
+    font-family: 'Outfit', sans-serif; }
 
 .container {
-    width: 50%;
+    width: 35%;
+    display: flex;
     flex-direction: column;
     gap:1em;
     background-color: hsl(216, 50%, 16%);
@@ -27,22 +25,38 @@ main{
 }
 .container .card-box{
     display: flex;
+    background-color: hsl(216, 50%, 16%);
+    width: 100%;
     flex-direction: column;
     padding: 2em;
     gap:2em;
+    border-radius: 1rem;
+}
+.card-box .image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .card-box .image img{
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 1rem;
+}
+.card-box h1{
+    font-size: clamp(1rem, 2.5vw, 2rem); 
+
 }
 .card-box .description h2{
     color:hsl(215, 51%, 70%);
-    font-weight: 400;
+    font-size: clamp(0.8rem, 2.2vw, 1.8rem); 
+    font-weight: 300;
 }
 .card-box .coin{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: clamp(0.6rem, 1.5vw, 1rem); 
     
 }
 .coin #eth{
@@ -51,6 +65,7 @@ main{
 }
 .coin #time{
     color: hsl(215, 51%, 70%);
+    font-weight: 300;
 }
 .coin #eth,
 .coin #time{
@@ -69,13 +84,29 @@ main{
     display: flex;
     align-items: center;
     gap: 1em;
+    font-size: clamp(0.6rem, 1.5vw, 1rem); 
+}
+.creator .creator-text{
+    display: flex;
+    flex-direction: row;
+
 }
 .card-box .creator .avatar{
     height: 2.5em;
     border: 1px solid #fff;
     border-radius: 50%;
 }
+
 .creator .creator-text{
     display: flex;
-    flex-direction: row;
+    align-items: center ;
+    gap: 0.5em;
+}
+@media only screen and (max-width: 670px){
+    .container{
+        width:70%;
+    }
+    .container .card-box{
+        gap: 1em;
+    }
 }
