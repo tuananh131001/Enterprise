@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+
+    <script>
+      var usdRate = 0,
+        usd = 0,
+        eurRate = 0,
+        poundsRate = 0;
+      api_url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+      fetch(api_url)
+        .then((response) => response.json())
+        .then((json) => {
+          // console.log(json.bpi.EUR.rate)
+          usdRate = json.bpi.USD.rate_float;
+          eurRate = json.bpi.EUR.rate_float;
+          poundsRate = json.bpi.GBP.rate_float;
+        });
+      function convert_usd() {
+        usd = document.querySelector("#money").value;
+        console.log(usd);
+        let btc_usd = usd / usdRate;
+        document.querySelector("#usdc").value = btc_usd;
+      }
+      function convert_eur() {
+        eur = document.querySelector("#eur").value;
+        let usdc = usd / eurRate;
+        document.querySelector("#btc-eur").value = usdc;
+      }
+      function convert_pounds() {
+        pounds = document.querySelector("#pounds").value;
+        let usdc = usd / poundsRate;
+        document.querySelector("#btc-pounds").value = usdc;
+      }
+    </script>
+  </head>
+  <body>
+    <label for="money"> Enter the number of USD, EUR, Pounds</label>
+    <!-- USD - BTC -->
+    <div class="usd-btc">
+      <input type="text" id="money" placeholder="Enter money" />
+      <label for="usdc"> USD -> BTC</label>
+      <button onclick="convert_usd()">Convert</button>
+      <input type="text" id="usdc" readonly />
+    </div>
+    <!-- EUR - BTC -->
+    <div class="eur-btc">
+      <input type="text" id="eur" placeholder="Enter money" />
+      <label for="usdc"> EUR -> BTC</label>
+      <button onclick="convert_eur()">Convert</button>
+      <input type="text" id="btc-eur" readonly />
+    </div>
+    <!-- POUNDS - BTC -->
+    <div class="pounds-btc">
+      <input type="text" id="pounds" placeholder="Enter money" />
+      <label for="usdc"> POUNDS -> BTC</label>
+      <button onclick="convert_pounds()">Convert</button>
+      <input type="text" id="btc-pounds" readonly />
+    </div>
+
+
+  </body>
+</html>
