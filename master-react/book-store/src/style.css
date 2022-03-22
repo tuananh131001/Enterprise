@@ -29,6 +29,7 @@ h1 {
 @media screen and (min-width:48rem){
     .booklist{
         grid-template-columns: repeat(3,1fr);
+        align-items: flex-start;
     }
     
 }
@@ -44,4 +45,7 @@ h1 {
     color:#222;
     font-size: 0.8rem;
     letter-spacing: 5px;
+}
+.book p{
+    margin-top: 0.5rem;
 }
